@@ -379,4 +379,18 @@ document.addEventListener('DOMContentLoaded', function() {
         scrollTopButton.style.transform = 'translateY(0)';
         scrollTopButton.style.boxShadow = '0 4px 10px rgba(0, 0, 0, 0.15)';
     });
+
+    // 앱 스토어 버튼 클릭 이벤트
+    const appStoreButton = document.querySelector('.download-button.app-store');
+    appStoreButton.addEventListener('click', function(e) {
+        e.preventDefault();
+        alert('앱 스토어 버전은 현재 준비 중입니다. 조금만 기다려주세요!');
+    });
+
+    // 구글플레이 버튼 클릭 이벤트
+    const googlePlayButton = document.querySelector('.download-button.google-play');
+    googlePlayButton.addEventListener('click', function(e) {
+        e.preventDefault();
+        alert('구글플레이 버전은 현재 준비 중입니다. 조금만 기다려주세요!');
+    });
 }); 
