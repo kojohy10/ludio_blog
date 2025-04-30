@@ -1056,4 +1056,129 @@ footer {
     .section-header h2 {
         font-size: 22px;
     }
+}
+
+/* 경품 페이지 스타일 */
+#rewards-page {
+    padding: 80px 0;
+    background-color: #f8f9fa;
+}
+
+#rewards-page .section-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+#rewards-page .section-header h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#rewards-page .section-header p {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.rewards-categories {
+    margin-bottom: 60px;
+}
+
+.rewards-categories .category {
+    margin-bottom: 40px;
+}
+
+.rewards-categories .category h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 30px;
+    padding-left: 20px;
+    border-left: 4px solid #6C5CE7;
+}
+
+.rewards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.reward-card {
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.reward-card:hover {
+    transform: translateY(-5px);
+}
+
+.reward-card img {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    margin-bottom: 20px;
+}
+
+.reward-card h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.reward-card p {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.rewards-info {
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.rewards-info h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.rewards-info ol {
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.rewards-info li {
+    margin-bottom: 10px;
+    color: #666;
+}
+
+.rewards-info .note {
+    font-size: 0.9rem;
+    color: #999;
+    font-style: italic;
+}
+
+@media (max-width: 768px) {
+    #rewards-page {
+        padding: 40px 0;
+    }
+    
+    #rewards-page .section-header h1 {
+        font-size: 2rem;
+    }
+    
+    .rewards-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .rewards-info {
+        padding: 20px;
+    }
 } 
