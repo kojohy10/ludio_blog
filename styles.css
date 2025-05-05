@@ -264,9 +264,9 @@ nav ul li a:hover {
 .hero-image img {
     max-width: 100%;
     height: auto;
-    position: relative;
-    z-index: 2;
     animation: float 6s ease-in-out infinite;
+    border-radius: 20px;
+    box-shadow: var(--card-shadow);
 }
 
 @keyframes float {
