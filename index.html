@@ -267,10 +267,10 @@
                 </p>
             </div>
             <div class="download-buttons">
-                <a href="#" class="download-button google-play">
+                <a href="https://play.google.com/store/apps/details?id=com.ludio.app" class="download-button google-play">
                     <img src="assets/googleplay.png" alt="Google Play">
                 </a>
-                <a href="#" class="download-button app-store">
+                <a href="javascript:void(0)" onclick="showAppStoreAlert()" class="download-button app-store">
                     <img src="assets/appstore.png" alt="App Store">
                 </a>
             </div>
@@ -318,5 +318,10 @@
     </footer>
 
     <script src="script.js"></script>
+    <script>
+        function showAppStoreAlert() {
+            alert('iOS 버전은 6월 출시 예정입니다. 조금만 기다려주세요!');
+        }
+    </script>
 </body>
 </html> 
